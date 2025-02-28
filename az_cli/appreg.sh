@@ -2,7 +2,7 @@
 # az login
 
 # Register the app and get the appId using the default tenant domain
-app_id=$(az ad app create --display-name "EmployeeAPIApp" --identifier-uris "https://0fa8fe39-3a85-4ac4-929d-caf83acfd064.onmicrosoft.com/employeeapiapp" --query appId -o tsv)
+app_id=$(az ad app create --display-name "EmployeeAPIApp" --identifier-uris "https://localhost/employeeapiapp" --query appId -o tsv)
 
 # Create the client secret
 client_secret=$(az ad app credential reset --id $app_id --append --query password -o tsv)
