@@ -1,5 +1,5 @@
 # Log into Azure
-az login
+# az login
 
 # Register the app and get the appId using the default tenant domain
 app_id=$(az ad app create --display-name "EmployeeAPIApp" --identifier-uris "https://0fa8fe39-3a85-4ac4-929d-caf83acfd064.onmicrosoft.com/employeeapiapp" --query appId -o tsv)
